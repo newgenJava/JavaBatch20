@@ -10,7 +10,22 @@ public class Streams {
 
 	public static void main(String[] args) {
 		List<String> list = Arrays.asList("Apricots","Apple", "Banana", "Mango","Apple" );
+//		for( String element: list) {
+//			if(element.startsWith("A")) {
+//				list.add(element);
+//			}
+//		}
+
 		
+		list.stream()
+	    .forEach(System.out::println);
+		
+		System.out.println("");
+				
+		list.parallelStream()
+		.distinct()
+		.map(n -> n+= "-Update")
+	    .forEach(System.out::println);
 		List<String> result = new ArrayList<String>();
 //		
 //		for( String element: list) {
@@ -31,12 +46,11 @@ public class Streams {
 		    .skip(1)
 		    .limit(3)
 		    .collect(Collectors.toList());
+//		
+//		for (String element: result) {
+//			System.out.println(element);
+//		}
 		
-		for(String el: result) {
-			System.out.println(el);
-		}
-		
-//		list2.stream()
 
 	}
 
