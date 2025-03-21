@@ -32,4 +32,8 @@ public class Car {
 		this.name = "Car-"+counter;
 		this.thisCounter = counter++;
 	}
+	@Override
+	public String toString() {
+		return "Car [name=" + name + ", thisCounter=" + thisCounter + "]";
+	}
 }
