@@ -1,0 +1,146 @@
+2025-04-10T20:23:08.094+05:30  INFO 39904 --- [socialMedia] [restartedMain] c.n.c.s.SocialMediaApplication           : Starting SocialMediaApplication using Java 21.0.6 with PID 39904 (D:\Ayush\Newgen\Course\JavaBatch20\socialMedia (2)\socialMedia\target\classes started by ayush in D:\Ayush\Newgen\Course\JavaBatch20\socialMedia (2)\socialMedia)
+2025-04-10T20:23:08.098+05:30 DEBUG 39904 --- [socialMedia] [restartedMain] c.n.c.s.SocialMediaApplication           : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-04-10T20:23:08.100+05:30  INFO 39904 --- [socialMedia] [restartedMain] c.n.c.s.SocialMediaApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-04-10T20:23:08.209+05:30  INFO 39904 --- [socialMedia] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-10T20:23:08.212+05:30  INFO 39904 --- [socialMedia] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-10T20:23:10.771+05:30  INFO 39904 --- [socialMedia] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-10T20:23:10.957+05:30  INFO 39904 --- [socialMedia] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 146 ms. Found 1 JPA repository interface.
+2025-04-10T20:23:13.054+05:30  INFO 39904 --- [socialMedia] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-04-10T20:23:13.093+05:30  INFO 39904 --- [socialMedia] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-10T20:23:13.094+05:30  INFO 39904 --- [socialMedia] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-10T20:23:13.254+05:30  INFO 39904 --- [socialMedia] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-10T20:23:13.255+05:30  INFO 39904 --- [socialMedia] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5042 ms
+2025-04-10T20:23:13.718+05:30  INFO 39904 --- [socialMedia] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-10T20:23:13.915+05:30  INFO 39904 --- [socialMedia] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-10T20:23:14.046+05:30  INFO 39904 --- [socialMedia] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-10T20:23:15.223+05:30  INFO 39904 --- [socialMedia] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-10T20:23:15.314+05:30  INFO 39904 --- [socialMedia] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-10T20:23:15.822+05:30  INFO 39904 --- [socialMedia] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@42f46458
+2025-04-10T20:23:15.828+05:30  INFO 39904 --- [socialMedia] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-10T20:23:16.029+05:30  INFO 39904 --- [socialMedia] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-10T20:23:17.788+05:30  INFO 39904 --- [socialMedia] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-10T20:23:17.912+05:30  INFO 39904 --- [socialMedia] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-10T20:23:19.354+05:30  WARN 39904 --- [socialMedia] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-10T20:23:20.679+05:30  INFO 39904 --- [socialMedia] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-10T20:23:20.788+05:30  INFO 39904 --- [socialMedia] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2025-04-10T20:23:20.806+05:30  INFO 39904 --- [socialMedia] [restartedMain] c.n.c.s.SocialMediaApplication           : Started SocialMediaApplication in 13.859 seconds (process running for 16.647)
+2025-04-10T20:23:31.739+05:30  INFO 39904 --- [socialMedia] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-10T20:23:31.743+05:30  INFO 39904 --- [socialMedia] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-10T20:23:31.751+05:30  INFO 39904 --- [socialMedia] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2025-04-10T20:23:31.941+05:30  INFO 39904 --- [socialMedia] [http-nio-9090-exec-1] c.n.c.s.controller.UserJPAController     : findOneUserJPA + fetching user for id + 10
+2025-04-10T20:23:33.412+05:30  INFO 39904 --- [socialMedia] [http-nio-9090-exec-1] c.n.c.s.controller.UserJPAController     : User found : User(id=10, name=Alex, email=alex@gmail.com, birthDate=null)
+2025-04-10T20:31:02.549+05:30  INFO 33776 --- [socialMedia] [restartedMain] c.n.c.s.SocialMediaApplication           : Starting SocialMediaApplication using Java 21.0.6 with PID 33776 (D:\Ayush\Newgen\Course\JavaBatch20\socialMedia (2)\socialMedia\target\classes started by ayush in D:\Ayush\Newgen\Course\JavaBatch20\socialMedia (2)\socialMedia)
+2025-04-10T20:31:02.556+05:30 DEBUG 33776 --- [socialMedia] [restartedMain] c.n.c.s.SocialMediaApplication           : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-04-10T20:31:02.558+05:30  INFO 33776 --- [socialMedia] [restartedMain] c.n.c.s.SocialMediaApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-04-10T20:31:02.681+05:30  INFO 33776 --- [socialMedia] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-10T20:31:02.681+05:30  INFO 33776 --- [socialMedia] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-10T20:31:05.713+05:30  INFO 33776 --- [socialMedia] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-10T20:31:05.886+05:30  INFO 33776 --- [socialMedia] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 137 ms. Found 1 JPA repository interface.
+2025-04-10T20:31:08.037+05:30  INFO 33776 --- [socialMedia] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-04-10T20:31:08.071+05:30  INFO 33776 --- [socialMedia] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-10T20:31:08.073+05:30  INFO 33776 --- [socialMedia] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-10T20:31:08.251+05:30  INFO 33776 --- [socialMedia] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-10T20:31:08.253+05:30  INFO 33776 --- [socialMedia] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5571 ms
+2025-04-10T20:31:09.747+05:30  INFO 33776 --- [socialMedia] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-10T20:31:09.929+05:30  INFO 33776 --- [socialMedia] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-10T20:31:10.041+05:30  INFO 33776 --- [socialMedia] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-10T20:31:11.261+05:30  INFO 33776 --- [socialMedia] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-10T20:31:11.573+05:30  INFO 33776 --- [socialMedia] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-10T20:31:12.085+05:30  INFO 33776 --- [socialMedia] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4050b7e0
+2025-04-10T20:31:12.090+05:30  INFO 33776 --- [socialMedia] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-10T20:31:12.334+05:30  INFO 33776 --- [socialMedia] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-10T20:31:14.682+05:30  INFO 33776 --- [socialMedia] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-10T20:31:14.957+05:30  INFO 33776 --- [socialMedia] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-10T20:31:16.620+05:30  WARN 33776 --- [socialMedia] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-10T20:31:19.395+05:30  INFO 33776 --- [socialMedia] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-10T20:31:19.446+05:30  INFO 33776 --- [socialMedia] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-04-10T20:31:19.716+05:30  INFO 33776 --- [socialMedia] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2025-04-10T20:31:19.775+05:30  INFO 33776 --- [socialMedia] [restartedMain] c.n.c.s.SocialMediaApplication           : Started SocialMediaApplication in 18.296 seconds (process running for 19.38)
+2025-04-10T20:31:41.494+05:30  INFO 44088 --- [socialMedia] [restartedMain] c.n.c.s.SocialMediaApplication           : Starting SocialMediaApplication using Java 21.0.6 with PID 44088 (D:\Ayush\Newgen\Course\JavaBatch20\socialMedia (2)\socialMedia\target\classes started by ayush in D:\Ayush\Newgen\Course\JavaBatch20\socialMedia (2)\socialMedia)
+2025-04-10T20:31:41.500+05:30 DEBUG 44088 --- [socialMedia] [restartedMain] c.n.c.s.SocialMediaApplication           : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-04-10T20:31:41.507+05:30  INFO 44088 --- [socialMedia] [restartedMain] c.n.c.s.SocialMediaApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-04-10T20:31:41.630+05:30  INFO 44088 --- [socialMedia] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-10T20:31:41.631+05:30  INFO 44088 --- [socialMedia] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-10T20:31:44.890+05:30  INFO 44088 --- [socialMedia] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-10T20:31:45.090+05:30  INFO 44088 --- [socialMedia] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 165 ms. Found 1 JPA repository interface.
+2025-04-10T20:31:47.698+05:30  INFO 44088 --- [socialMedia] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-04-10T20:31:47.754+05:30  INFO 44088 --- [socialMedia] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-10T20:31:47.755+05:30  INFO 44088 --- [socialMedia] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-10T20:31:47.897+05:30  INFO 44088 --- [socialMedia] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-10T20:31:47.898+05:30  INFO 44088 --- [socialMedia] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6265 ms
+2025-04-10T20:31:49.075+05:30  INFO 44088 --- [socialMedia] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-10T20:31:49.259+05:30  INFO 44088 --- [socialMedia] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-10T20:31:49.379+05:30  INFO 44088 --- [socialMedia] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-10T20:31:50.244+05:30  INFO 44088 --- [socialMedia] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-10T20:31:50.335+05:30  INFO 44088 --- [socialMedia] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-10T20:31:50.820+05:30  INFO 44088 --- [socialMedia] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45d01441
+2025-04-10T20:31:50.825+05:30  INFO 44088 --- [socialMedia] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-10T20:31:51.024+05:30  INFO 44088 --- [socialMedia] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-10T20:31:53.167+05:30  INFO 44088 --- [socialMedia] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-10T20:31:53.265+05:30  INFO 44088 --- [socialMedia] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-10T20:31:54.947+05:30  WARN 44088 --- [socialMedia] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-10T20:31:58.588+05:30  INFO 44088 --- [socialMedia] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-10T20:31:58.637+05:30  INFO 44088 --- [socialMedia] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-04-10T20:31:58.960+05:30  INFO 44088 --- [socialMedia] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2025-04-10T20:31:59.018+05:30  INFO 44088 --- [socialMedia] [restartedMain] c.n.c.s.SocialMediaApplication           : Started SocialMediaApplication in 18.74 seconds (process running for 20.561)
+2025-04-10T20:32:39.935+05:30  INFO 44088 --- [socialMedia] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-10T20:32:39.936+05:30  INFO 44088 --- [socialMedia] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-10T20:32:39.941+05:30  INFO 44088 --- [socialMedia] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-04-10T20:35:07.955+05:30  INFO 8188 --- [socialMedia] [restartedMain] c.n.c.s.SocialMediaApplication           : Starting SocialMediaApplication using Java 21.0.6 with PID 8188 (D:\Ayush\Newgen\Course\JavaBatch20\socialMedia (2)\socialMedia\target\classes started by ayush in D:\Ayush\Newgen\Course\JavaBatch20\socialMedia (2)\socialMedia)
+2025-04-10T20:35:07.961+05:30 DEBUG 8188 --- [socialMedia] [restartedMain] c.n.c.s.SocialMediaApplication           : Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-04-10T20:35:07.964+05:30  INFO 8188 --- [socialMedia] [restartedMain] c.n.c.s.SocialMediaApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-04-10T20:35:08.082+05:30  INFO 8188 --- [socialMedia] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-10T20:35:08.082+05:30  INFO 8188 --- [socialMedia] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-10T20:35:11.299+05:30  INFO 8188 --- [socialMedia] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-10T20:35:11.750+05:30  INFO 8188 --- [socialMedia] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 319 ms. Found 1 JPA repository interface.
+2025-04-10T20:35:13.988+05:30  INFO 8188 --- [socialMedia] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-04-10T20:35:14.025+05:30  INFO 8188 --- [socialMedia] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-10T20:35:14.026+05:30  INFO 8188 --- [socialMedia] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-10T20:35:14.170+05:30  INFO 8188 --- [socialMedia] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-10T20:35:14.171+05:30  INFO 8188 --- [socialMedia] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6087 ms
+2025-04-10T20:35:15.418+05:30  INFO 8188 --- [socialMedia] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-10T20:35:15.561+05:30  INFO 8188 --- [socialMedia] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-10T20:35:15.658+05:30  INFO 8188 --- [socialMedia] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-10T20:35:16.469+05:30  INFO 8188 --- [socialMedia] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-10T20:35:16.555+05:30  INFO 8188 --- [socialMedia] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-10T20:35:17.001+05:30  INFO 8188 --- [socialMedia] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@37b0900
+2025-04-10T20:35:17.009+05:30  INFO 8188 --- [socialMedia] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-10T20:35:17.232+05:30  INFO 8188 --- [socialMedia] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-10T20:35:19.235+05:30  INFO 8188 --- [socialMedia] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-10T20:35:19.345+05:30  INFO 8188 --- [socialMedia] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-10T20:35:20.505+05:30  WARN 8188 --- [socialMedia] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-10T20:35:22.831+05:30  INFO 8188 --- [socialMedia] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-10T20:35:22.867+05:30  INFO 8188 --- [socialMedia] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 5 endpoints beneath base path '/actuator'
+2025-04-10T20:35:23.116+05:30  INFO 8188 --- [socialMedia] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2025-04-10T20:35:23.157+05:30  INFO 8188 --- [socialMedia] [restartedMain] c.n.c.s.SocialMediaApplication           : Started SocialMediaApplication in 16.321 seconds (process running for 17.75)
+2025-04-10T20:35:28.762+05:30  INFO 8188 --- [socialMedia] [http-nio-9090-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-10T20:35:28.763+05:30  INFO 8188 --- [socialMedia] [http-nio-9090-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-10T20:35:28.767+05:30  INFO 8188 --- [socialMedia] [http-nio-9090-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms

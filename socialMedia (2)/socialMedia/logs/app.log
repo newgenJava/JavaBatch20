@@ -1,0 +1,41 @@
+2025-04-10 20:39:59 - HV000001: Hibernate Validator 8.0.2.Final
+2025-04-10 20:39:59 - Starting SocialMediaApplication using Java 21.0.6 with PID 8760 (D:\Ayush\Newgen\Course\JavaBatch20\socialMedia (2)\socialMedia\target\classes started by ayush in D:\Ayush\Newgen\Course\JavaBatch20\socialMedia (2)\socialMedia)
+2025-04-10 20:39:59 - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-04-10 20:39:59 - No active profile set, falling back to 1 default profile: "default"
+2025-04-10 20:39:59 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-10 20:39:59 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-10 20:40:03 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-10 20:40:03 - Finished Spring Data repository scanning in 133 ms. Found 1 JPA repository interface.
+2025-04-10 20:40:06 - Tomcat initialized with port 9090 (http)
+2025-04-10 20:40:06 - Initializing ProtocolHandler ["http-nio-9090"]
+2025-04-10 20:40:06 - Starting service [Tomcat]
+2025-04-10 20:40:06 - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-10 20:40:06 - Initializing Spring embedded WebApplicationContext
+2025-04-10 20:40:06 - Root WebApplicationContext: initialization completed in 6880 ms
+2025-04-10 20:40:07 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-10 20:40:07 - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-10 20:40:08 - HHH000026: Second-level cache disabled
+2025-04-10 20:40:08 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-10 20:40:08 - HikariPool-1 - Starting...
+2025-04-10 20:40:09 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c79ba00
+2025-04-10 20:40:09 - HikariPool-1 - Start completed.
+2025-04-10 20:40:09 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 9.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-10 20:40:11 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-10 20:40:12 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-10 20:40:13 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-10 20:40:15 - LiveReload server is running on port 35729
+2025-04-10 20:40:15 - Exposing 5 endpoints beneath base path '/actuator'
+2025-04-10 20:40:16 - Starting ProtocolHandler ["http-nio-9090"]
+2025-04-10 20:40:16 - Tomcat started on port 9090 (http) with context path '/'
+2025-04-10 20:40:16 - Started SocialMediaApplication in 17.769 seconds (process running for 19.032)
+2025-04-10 20:40:47 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-10 20:40:47 - Initializing Servlet 'dispatcherServlet'
+2025-04-10 20:40:47 - Completed initialization in 5 ms
+2025-04-10 20:40:47 - Finding all users

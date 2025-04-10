@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.newgen.course.socialMedia.model.User;
-import com.newgen.course.socialMedia.service.UserService;
+import com.newgen.course.socialMedia.model.*;
+import com.newgen.course.socialMedia.service.*;
 
 @RestController()
 @RequestMapping("/users")
