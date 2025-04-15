@@ -38,7 +38,7 @@ public class UserJPAController {
 
 	@Autowired
 	private UserRepository userRepository;
-	
+
 	private static final Logger logger = LoggerFactory.getLogger(UserJPAController.class);
 
 	UserJPAController(SocialMediaApplication socialMediaApplication) {
@@ -58,7 +58,7 @@ public class UserJPAController {
 			logger.error("User Not Found with id " + id);
 			return ResponseEntity.notFound().build();
 		}
-		
+
 		var user = userRepository.findById(id).get();
 		logger.info("User found : " + user.toString());
 		return ResponseEntity.ok(user);
@@ -109,16 +109,29 @@ public class UserJPAController {
 //		if (!userRepository.existsById(id)) {
 //			throw new UserNotFoundException("User with id " + id + " not found", "1001");
 //		}
-
-		User userFound = userRepository.findById(id)
-				.orElseThrow(() -> new UserNotFoundException("User with id " + id + " not found", "1001"));
+		var headers = new HttpHeaders();
+		User userFound = null;
+		ResponseEntity<User> response = new ResponseEntity<User>(null);
+		try {
+			userFound = userRepository.findById(id)
+					.orElseThrow(() -> new UserNotFoundException("User with id " + id + " not found", "1001"));
 //		User userFound = userFoundOpt.get();
-		userFound.setName(userInp.getName());
-		userFound.setEmail(userInp.getEmail());
+			userFound.setName(userInp.getName());
+			userFound.setEmail(userInp.getEmail());
 
-		userRepository.save(userFound);
+			userRepository.save(userFound);
+			response = ResponseEntity.ok(userFound);
+		} catch (Exception ex) {
+			// update kar do exception details within headers
+			headers.add("ErrorDetails", ex.getLocalizedMessage());
+		} finally {
+			if(headers.containsKey("ErrorDetails"));
+			{
+				response = ResponseEntity.notFound().headers(headers).build();
+			}
+		}
 
-		return ResponseEntity.ok(userFound);
+		return response ;
 	}
 
 	@PutMapping("/{id}")
