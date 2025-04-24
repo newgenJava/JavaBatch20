@@ -10,8 +10,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -162,4 +164,20 @@ public class UserJPAController {
 		userRepository.deleteById(id);
 		return ResponseEntity.noContent().build();
 	}
+	
+	@PostMapping("formusers")
+	public String createUserForm( @ModelAttribute @Valid UserDTO userInp, BindingResult result) {
+
+		if(result.hasErrors()) {
+			return "formPage";
+		}
+		User userTobeCreated = new User();
+		userTobeCreated.setBirthDate(userInp.getBirthDate());
+		userTobeCreated.setEmail(userInp.getEmail());
+		userTobeCreated.setName(userInp.getName());
+
+		User userCreated = userRepository.save(userTobeCreated);
+		return "Success";
+	}
+	
 }
