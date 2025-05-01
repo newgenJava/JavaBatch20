@@ -26,8 +26,11 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import org.springframework.web.util.UriComponents;
 import com.newgen.course.socialMedia.SocialMediaApplication;
 import com.newgen.course.socialMedia.exception.UserNotFoundException;
+import com.newgen.course.socialMedia.model.Post;
+import com.newgen.course.socialMedia.model.PostDTO;
 import com.newgen.course.socialMedia.model.User;
 import com.newgen.course.socialMedia.model.UserDTO;
+import com.newgen.course.socialMedia.repository.PostRepository;
 import com.newgen.course.socialMedia.repository.UserRepository;
 
 import jakarta.validation.Valid;
@@ -40,6 +43,9 @@ public class UserJPAController {
 
 	@Autowired
 	private UserRepository userRepository;
+	
+	@Autowired
+	private PostRepository postRepository;
 
 	private static final Logger logger = LoggerFactory.getLogger(UserJPAController.class);
 
@@ -62,7 +68,7 @@ public class UserJPAController {
 		}
 
 		var user = userRepository.findById(id).get();
-		logger.info("User found : " + user.toString());
+//		logger.info("User found : " + user.toString());
 		return ResponseEntity.ok(user);
 	}
 
@@ -127,13 +133,14 @@ public class UserJPAController {
 			// update kar do exception details within headers
 			headers.add("ErrorDetails", ex.getLocalizedMessage());
 		} finally {
-			if(headers.containsKey("ErrorDetails"));
+			if (headers.containsKey("ErrorDetails"))
+				;
 			{
 				response = ResponseEntity.notFound().headers(headers).build();
 			}
 		}
 
-		return response ;
+		return response;
 	}
 
 	@PutMapping("/{id}")
@@ -164,11 +171,11 @@ public class UserJPAController {
 		userRepository.deleteById(id);
 		return ResponseEntity.noContent().build();
 	}
-	
-	@PostMapping("formusers")
-	public String createUserForm( @ModelAttribute @Valid UserDTO userInp, BindingResult result) {
 
-		if(result.hasErrors()) {
+	@PostMapping("formusers")
+	public String createUserForm(@ModelAttribute @Valid UserDTO userInp, BindingResult result) {
+
+		if (result.hasErrors()) {
 			return "formPage";
 		}
 		User userTobeCreated = new User();
@@ -179,5 +186,19 @@ public class UserJPAController {
 		User userCreated = userRepository.save(userTobeCreated);
 		return "Success";
 	}
+
+	@PostMapping("/{userId}/posts")
+	public ResponseEntity<Post> createPost(@PathVariable int userId, @RequestBody PostDTO postInp) {
+		User user = userRepository.findById(userId)
+				.orElseThrow(() -> new UserNotFoundException(String.valueOf(userId), "1"));
+		
+		Post post = new Post();
+		
+		post.setContents(postInp.getContents());
+		post.setUser(user);
+		Post savedPost = postRepository.save(post);
+		return ResponseEntity.ok(savedPost);
+	}
 	
+
 }

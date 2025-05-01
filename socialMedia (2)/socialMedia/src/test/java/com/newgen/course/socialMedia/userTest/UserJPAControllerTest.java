@@ -36,8 +36,8 @@ public class UserJPAControllerTest {
 
 	@Test
 	public void testFindAllUsers() throws Exception {
-		List<User> mockUsers = List.of(new User(10000, "Alice", "alice@newgen.com", LocalDate.of(1995, 1, 1)),
-				new User(10001, "John", "john@newgen.com", LocalDate.of(1992, 1, 1)));
+		List<User> mockUsers = List.of(new User(10000, "Alice", "alice@newgen.com", LocalDate.of(1995, 1, 1), null),
+				new User(10001, "John", "john@newgen.com", LocalDate.of(1992, 1, 1), null));
 
 		Mockito.when(userRepository.findAll()).thenReturn(mockUsers);
 
@@ -51,7 +51,7 @@ public class UserJPAControllerTest {
 	@Test
 	public void testFindOneUser() throws Exception {
 		int userId = 1;
-		User mockUser = new User(userId, "John", "john@newgen.com", LocalDate.of(1992, 1, 1));
+		User mockUser = new User(userId, "John", "john@newgen.com", LocalDate.of(1992, 1, 1), null);
 
 		Mockito.when(userRepository.existsById(userId)).thenReturn(true);
 		Mockito.when(userRepository.findById(userId)).thenReturn(Optional.of(mockUser));
@@ -78,7 +78,7 @@ public class UserJPAControllerTest {
 	@Test
 	public void testCreateUser() throws Exception {
 
-		User newUser = new User(null, "John", "john@newgen.com", LocalDate.of(1992, 1, 1));
+		User newUser = new User(null, "John", "john@newgen.com", LocalDate.of(1992, 1, 1), null);
 		
 		Mockito.when(null).thenReturn(newUser);
 		mockMvc.perform(

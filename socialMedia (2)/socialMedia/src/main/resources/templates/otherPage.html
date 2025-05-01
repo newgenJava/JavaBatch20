@@ -3,33 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <title>Other Page</title>
+<script src="/js/userManagement.js"></script>
+<link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-	<h1>this is the other page</h1>
-	<a href="index">Go to Home</a>
-	<table border="1">
+
+
+	<table id="userTable" border="1">
 		<tr>
-			<th>Username</th>
+			<th>ID</th>
+			<th>Name</th>
 			<th>Email</th>
-		</tr>
-		<tr>
-			<td>john_doe</td>
-			<td>john@example.com</td>
+			<th>BirthDate</th>
 		</tr>
 	</table>
-
-
-
-	<ul>
-		<li>Item One</li>
-		<li>Item Two</li>
-	</ul>
-
-	<ol>
-		<li>First Item</li>
-		<li>Second Item</li>
-	</ol>
-
+	<button onClick=fetchUsers()>Update Data</button>
+	<br>
+	<input type="text" name="name" id="name"><br> 
+	<input type="email" name="email" id="email"><br>
+	<input type="date" name="birthDate" id="birthDate"><br>
+	<button onClick=addUser()>Add User</button>
 </body>
 </html>
 
