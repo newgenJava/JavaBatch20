@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -54,6 +55,7 @@ public class UserJPAController {
 	}
 
 	@GetMapping
+	@PreAuthorize("hasAnyRole('USER','ADMIN')")
 	public List<User> findAllJPA() {
 		logger.info("Finding all users");
 		return userRepository.findAll();
@@ -78,6 +80,7 @@ public class UserJPAController {
 	}
 
 	@PostMapping
+	@PreAuthorize("hasAnyRole('ADMIN')")
 	public User createUserJPA(@Valid @RequestBody User userInp) {
 		User userCreated = userRepository.save(userInp);
 		return userCreated;
