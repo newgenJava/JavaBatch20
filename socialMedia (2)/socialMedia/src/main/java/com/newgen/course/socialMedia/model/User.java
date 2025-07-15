@@ -33,12 +33,12 @@ public class User {
 	private String email;
 
 	private LocalDate birthDate;
-
-	public User(Integer id, String name) {
-		super();
-		this.id = id;
-		this.name = name;
-	}
+//
+//	public User(Integer id, String name) {
+//		super();
+//		this.id = id;
+//		this.name = name;
+//	}
 	
 	
 	@OneToMany(mappedBy="user", cascade=CascadeType.ALL, orphanRemoval=true)
